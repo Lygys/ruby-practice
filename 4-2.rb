@@ -1,0 +1,2 @@
+a = [].class
+puts a
