@@ -38,3 +38,27 @@ a = a - c
 p a
 b = [4, 5, 6]
 p a & b
+a = []
+b = [2, 3]
+a.push(1)
+p a.push(b)
+a = []
+a.push(1)
+p a.push(*b)
+
+jp = ['japan', '日本']
+country = '日本'
+
+b =
+case country
+when *jp
+  'こんにちは'
+end
+p b
+
+def greet(*names)
+  "#{names.join('と')}、こんにちは！"
+end
+p greet('田中さん')
+p greet('田中さん', '鈴木さん')
+p greet('田中さん', '鈴木さん', '佐藤さん')
