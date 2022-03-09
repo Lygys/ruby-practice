@@ -62,3 +62,15 @@ end
 p greet('田中さん')
 p greet('田中さん', '鈴木さん')
 p greet('田中さん', '鈴木さん', '佐藤さん')
+
+a = Array.new(5, 'default')
+p a
+str = a[0]
+str.upcase!
+p a
+a = Array.new(5) { 'default' }
+str = a[0]
+str.upcase!
+p a
+
+
